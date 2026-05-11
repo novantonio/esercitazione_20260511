@@ -204,8 +204,7 @@ def plot_doy_climatology(
     ax.set_title(
         f"Temperature vs. Day of Year at ({latitude:.4f}, {longitude:.4f}) by Year"
     )
-    ax.legend(title="Year / Logger", bbox_to_anchor=(1.05, 1), loc="upper left",
-              fontsize=7, markerscale=1.2)
+    #ax.legend(title="Year / Logger", bbox_to_anchor=(1.05, 1), loc="upper left", fontsize=7, markerscale=1.2)
     ax.grid(True, alpha=0.3)
     fig.tight_layout()
     return fig
@@ -247,7 +246,7 @@ def plot_monthly_climatology(
     ax.set_title("Monthly Mean and Standard Deviation of CORA Temperature")
     ax.set_xticks(range(1, 13))
     ax.set_xticklabels(MONTH_LABELS)
-    ax.legend(bbox_to_anchor=(1.05, 1), loc="upper left", fontsize=8)
+    #ax.legend(bbox_to_anchor=(1.05, 1), loc="upper left", fontsize=8)
     ax.grid(True, alpha=0.3)
     fig.tight_layout()
     return fig
